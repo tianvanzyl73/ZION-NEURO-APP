@@ -1,0 +1,121 @@
+import { Assessment } from '../types';
+
+export const ASSESSMENTS: Assessment[] = [
+  {
+    id: 'lr',
+    title: 'Left / Right Brain Quiz',
+    tagline: 'Explore your self-reported cognitive preferences: analytical vs holistic style.',
+    icon: 'swap-horizontal-outline',
+    kind: 'lr',
+    minutes: 3,
+    disclaimer:
+      'Science note: modern neuroscience shows both hemispheres work together on nearly every task. This quiz explores your self-reported thinking preferences for reflection, it does not locate abilities in one hemisphere.',
+    items: [
+      { type: 'tagged', prompt: 'When solving a problem, I prefer to…', options: [{ text: 'Break it into logical steps', tag: 'L' }, { text: 'See the big picture first', tag: 'R' }] },
+      { type: 'tagged', prompt: 'I naturally enjoy…', options: [{ text: 'Numbers, patterns and structure', tag: 'L' }, { text: 'Music, art and imagery', tag: 'R' }] },
+      { type: 'tagged', prompt: 'When giving directions I tend to…', options: [{ text: 'List precise turns and distances', tag: 'L' }, { text: 'Describe landmarks and sketch it', tag: 'R' }] },
+      { type: 'tagged', prompt: 'My notes usually look…', options: [{ text: 'Ordered lists and outlines', tag: 'L' }, { text: 'Mind maps and doodles', tag: 'R' }] },
+      { type: 'tagged', prompt: 'Important decisions are made…', options: [{ text: 'By weighing evidence carefully', tag: 'L' }, { text: 'With a strong gut feeling', tag: 'R' }] },
+      { type: 'tagged', prompt: 'When learning something new I…', options: [{ text: 'Follow the instructions step by step', tag: 'L' }, { text: 'Experiment and figure it out', tag: 'R' }] },
+      { type: 'tagged', prompt: 'My workspace is usually…', options: [{ text: 'Organized and labeled', tag: 'L' }, { text: 'Creative chaos I understand', tag: 'R' }] },
+      { type: 'tagged', prompt: 'I prefer questions that have…', options: [{ text: 'One clear right answer', tag: 'L' }, { text: 'Many possible interpretations', tag: 'R' }] },
+      { type: 'tagged', prompt: 'When telling a story I focus on…', options: [{ text: 'Facts and sequence of events', tag: 'L' }, { text: 'Feelings and vivid imagery', tag: 'R' }] },
+      { type: 'tagged', prompt: 'Under time pressure I…', options: [{ text: 'Analyze options quickly', tag: 'L' }, { text: 'Trust my intuition', tag: 'R' }] },
+    ],
+  },
+  {
+    id: 'temperament',
+    title: 'Temperament Assessment',
+    tagline: 'Discover your blend of the four traditional temperament types.',
+    icon: 'color-palette-outline',
+    kind: 'temperament',
+    minutes: 4,
+    disclaimer:
+      'The four temperaments are a traditional framework from ancient medicine, presented here for self-reflection. Modern personality science uses trait models like the Big Five.',
+    items: [
+      { type: 'tagged', prompt: 'At a social event I usually…', options: [{ text: 'Work the room with energy', tag: 'S' }, { text: 'Steer conversations toward goals', tag: 'C' }, { text: 'Have one deep conversation', tag: 'M' }, { text: 'Keep things calm and easy', tag: 'P' }] },
+      { type: 'tagged', prompt: 'When plans change suddenly I…', options: [{ text: 'Get excited by the novelty', tag: 'S' }, { text: 'Immediately take charge', tag: 'C' }, { text: 'Need time to re-analyze', tag: 'M' }, { text: 'Adapt without much fuss', tag: 'P' }] },
+      { type: 'tagged', prompt: 'My ideal weekend is…', options: [{ text: 'Full of people and activities', tag: 'S' }, { text: 'Progress on a big project', tag: 'C' }, { text: 'Quiet, meaningful and planned', tag: 'M' }, { text: 'Relaxed with zero pressure', tag: 'P' }] },
+      { type: 'tagged', prompt: 'In group work I tend to…', options: [{ text: 'Boost morale and ideas', tag: 'S' }, { text: 'Assign tasks and drive results', tag: 'C' }, { text: 'Perfect the details', tag: 'M' }, { text: 'Support and smooth conflicts', tag: 'P' }] },
+      { type: 'tagged', prompt: 'When criticized I…', options: [{ text: 'Shrug it off quickly', tag: 'S' }, { text: 'Debate back if it\u2019s wrong', tag: 'C' }, { text: 'Replay it for a long time', tag: 'M' }, { text: 'Avoid confrontation and move on', tag: 'P' }] },
+      { type: 'tagged', prompt: 'Deadlines make me…', options: [{ text: 'Start late, sprint at the end', tag: 'S' }, { text: 'Push harder and delegate', tag: 'C' }, { text: 'Prepare far in advance', tag: 'M' }, { text: 'Steady, no drama', tag: 'P' }] },
+      { type: 'tagged', prompt: 'Friends would describe me as…', options: [{ text: 'Fun and spontaneous', tag: 'S' }, { text: 'Driven and direct', tag: 'C' }, { text: 'Thoughtful and sensitive', tag: 'M' }, { text: 'Reliable and easygoing', tag: 'P' }] },
+      { type: 'tagged', prompt: 'When making decisions I rely on…', options: [{ text: 'Enthusiasm and optimism', tag: 'S' }, { text: 'Decisiveness and results', tag: 'C' }, { text: 'Careful analysis of risks', tag: 'M' }, { text: 'Consensus and harmony', tag: 'P' }] },
+      { type: 'tagged', prompt: 'My energy pattern is…', options: [{ text: 'Bursts of high energy', tag: 'S' }, { text: 'Relentless when goal-locked', tag: 'C' }, { text: 'Deep focus, then recharge alone', tag: 'M' }, { text: 'Steady and consistent', tag: 'P' }] },
+      { type: 'tagged', prompt: 'Under stress I become…', options: [{ text: 'Scattered and talkative', tag: 'S' }, { text: 'Controlling and impatient', tag: 'C' }, { text: 'Withdrawn and perfectionist', tag: 'M' }, { text: 'Quiet and avoidant', tag: 'P' }] },
+      { type: 'tagged', prompt: 'I feel most rewarded when…', options: [{ text: 'People enjoy my energy', tag: 'S' }, { text: 'I achieve a hard goal', tag: 'C' }, { text: 'The work is excellent', tag: 'M' }, { text: 'Everyone gets along', tag: 'P' }] },
+      { type: 'tagged', prompt: 'My approach to rules is…', options: [{ text: 'Flexible, rules are suggestions', tag: 'S' }, { text: 'Rules should serve results', tag: 'C' }, { text: 'Rules exist for good reasons', tag: 'M' }, { text: 'Whatever keeps the peace', tag: 'P' }] },
+    ],
+  },
+  {
+    id: 'bigfive',
+    title: 'Big Five Personality Assessment',
+    tagline: 'Map yourself on the five empirically validated personality dimensions.',
+    icon: 'analytics-outline',
+    kind: 'bigfive',
+    minutes: 5,
+    disclaimer:
+      'This short form is educational and based on the Big Five research tradition. It describes tendencies, not fixed types, and does not replace professional assessment.',
+    items: [
+      { type: 'likert', prompt: 'I have a vivid imagination and enjoy abstract ideas.', trait: 'O' },
+      { type: 'likert', prompt: 'I enjoy trying new experiences, foods or places.', trait: 'O' },
+      { type: 'likert', prompt: 'I prefer familiar routines over artistic novelty.', trait: 'O', reverse: true },
+      { type: 'likert', prompt: 'I keep things tidy and follow through on plans.', trait: 'C' },
+      { type: 'likert', prompt: 'I finish tasks I start, even when tedious.', trait: 'C' },
+      { type: 'likert', prompt: 'I often leave things messy or unfinished.', trait: 'C', reverse: true },
+      { type: 'likert', prompt: 'I feel energized around other people.', trait: 'E' },
+      { type: 'likert', prompt: 'I easily start conversations with strangers.', trait: 'E' },
+      { type: 'likert', prompt: 'I prefer to stay in the background at parties.', trait: 'E', reverse: true },
+      { type: 'likert', prompt: 'I sympathize easily with others\u2019 feelings.', trait: 'A' },
+      { type: 'likert', prompt: 'I try to cooperate rather than compete.', trait: 'A' },
+      { type: 'likert', prompt: 'I often criticize others harshly.', trait: 'A', reverse: true },
+      { type: 'likert', prompt: 'I worry a lot about things that might go wrong.', trait: 'N' },
+      { type: 'likert', prompt: 'My mood can change suddenly.', trait: 'N' },
+      { type: 'likert', prompt: 'I rarely feel anxious or down.', trait: 'N', reverse: true },
+    ],
+  },
+  {
+    id: 'memory',
+    title: 'Memory Quiz',
+    tagline: 'Benchmark your everyday memory habits and self-reported capacity.',
+    icon: 'layers-outline',
+    kind: 'index',
+    minutes: 3,
+    disclaimer:
+      'This is a self-report screening of everyday memory habits, not a clinical test. Persistent memory concerns deserve a professional evaluation.',
+    items: [
+      { type: 'tagged', prompt: 'I remember names shortly after meeting people.', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Usually', tag: '2' }, { text: 'Almost always', tag: '3' }] },
+      { type: 'tagged', prompt: 'I can hold a short list (like groceries) in mind without writing it down.', options: [{ text: '1\u20132 items', tag: '0' }, { text: '3\u20134 items', tag: '1' }, { text: '5\u20136 items', tag: '2' }, { text: '7+ items', tag: '3' }] },
+      { type: 'tagged', prompt: 'I remember where I put everyday objects (keys, phone).', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Usually', tag: '2' }, { text: 'Almost always', tag: '3' }] },
+      { type: 'tagged', prompt: 'I recall what I studied or read the previous day.', options: [{ text: 'Very little', tag: '0' }, { text: 'Fragments', tag: '1' }, { text: 'Most of it', tag: '2' }, { text: 'Most with details', tag: '3' }] },
+      { type: 'tagged', prompt: 'I remember appointments and deadlines without reminders.', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Usually', tag: '2' }, { text: 'Almost always', tag: '3' }] },
+      { type: 'tagged', prompt: 'I can retell a story or conversation with accurate detail.', options: [{ text: 'Struggle', tag: '0' }, { text: 'Rough outline', tag: '1' }, { text: 'Good detail', tag: '2' }, { text: 'Very accurate', tag: '3' }] },
+      { type: 'tagged', prompt: 'I get 7+ hours of quality sleep most nights (sleep supports memory).', options: [{ text: 'Rarely', tag: '0' }, { text: '1\u20132 nights', tag: '1' }, { text: '4\u20135 nights', tag: '2' }, { text: 'Most nights', tag: '3' }] },
+      { type: 'tagged', prompt: 'I use strategies like chunking, notes or spaced review.', options: [{ text: 'Never', tag: '0' }, { text: 'Rarely', tag: '1' }, { text: 'Often', tag: '2' }, { text: 'Consistently', tag: '3' }] },
+    ],
+  },
+  {
+    id: 'attention',
+    title: 'Attention Quiz',
+    tagline: 'Benchmark your focus, distractibility and attention habits.',
+    icon: 'focus-outline',
+    kind: 'index',
+    minutes: 3,
+    disclaimer:
+      'This is a self-report screening of everyday attention habits, not a diagnostic tool. Persistent attention difficulties deserve a professional evaluation.',
+    items: [
+      { type: 'tagged', prompt: 'I can sustain focus on one task for 30+ minutes.', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Usually', tag: '2' }, { text: 'Almost always', tag: '3' }] },
+      { type: 'tagged', prompt: 'Notifications pull me away from what I\u2019m doing.', options: [{ text: 'Constantly', tag: '0' }, { text: 'Often', tag: '1' }, { text: 'Occasionally', tag: '2' }, { text: 'Rarely', tag: '3' }] },
+      { type: 'tagged', prompt: 'I finish reading a page without re-reading it.', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Usually', tag: '2' }, { text: 'Almost always', tag: '3' }] },
+      { type: 'tagged', prompt: 'I notice details others miss (faces, changes, errors).', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Often', tag: '2' }, { text: 'Very often', tag: '3' }] },
+      { type: 'tagged', prompt: 'I can listen to someone without my mind drifting.', options: [{ text: 'Rarely', tag: '0' }, { text: 'Sometimes', tag: '1' }, { text: 'Usually', tag: '2' }, { text: 'Almost always', tag: '3' }] },
+      { type: 'tagged', prompt: 'I multitask between screens during important work.', options: [{ text: 'Constantly', tag: '0' }, { text: 'Often', tag: '1' }, { text: 'Occasionally', tag: '2' }, { text: 'Rarely', tag: '3' }] },
+      { type: 'tagged', prompt: 'I work in planned blocks with protected focus time.', options: [{ text: 'Never', tag: '0' }, { text: 'Rarely', tag: '1' }, { text: 'Often', tag: '2' }, { text: 'Consistently', tag: '3' }] },
+      { type: 'tagged', prompt: 'After an interruption, I return to deep focus quickly.', options: [{ text: 'Takes very long', tag: '0' }, { text: 'Takes a while', tag: '1' }, { text: 'Fairly quick', tag: '2' }, { text: 'Very quick', tag: '3' }] },
+    ],
+  },
+];
+
+export function getAssessment(id: string): Assessment | undefined {
+  return ASSESSMENTS.find((a) => a.id === id);
+}
